@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Liebe';
+    src: url('../font/LiebeFonts_LiebeErika.otf');
+}
+
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #005238;
+    /*background: url('../img/cloth.png') repeat;*/
+    width:100%;
+    overflow-x:hidden;
+
+}
+
+body{
+    width:100%;
+    min-height:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    position: relative;
+    width:80%;
+    margin:190px auto 20px auto;
+    /*border: 10px dashed #EDC059;*/
+    text-align: center;
+    font-size: 120px;
+    font-family: 'Liebe', cursive;
+    color: #EDC059;
+    letter-spacing: 15px;
+}
+
+p{
+    font-size: 70px;
+}
+
+
+/* DivTable.com */
+
+.table {
+    width:80%;
+    text-align: center;
+    display:block;
+    overflow:auto;
+    margin:0 auto;
+}
+
+#container {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    text-align: center;
+}
+
+#day {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background-color: #820A10;
+    font-size: 45px;
+    font-family: 'Liebe', cursive;
+    transition: 1.2s;
+    z-index: 2;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    border: 8px solid #006B4A;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background-color: #E9A811;
+    transition: 1.2s;
+    z-index: 1;
+    border-radius: 20px;
+    border: 8px solid #006B4A;
+}
+
+.flip {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+#snowContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.snowfall-flakes{
+    pointer-events: none;
+}
+
+.snowFlake {
+    position:absolute;
+    top:-80px;
+    width: 50px;
+    height: 50px;
+    font-size: 3em;
+    color: #fff;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+
+audio{
+    display:none;
+}
+
+.deco1{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    pointer-events:none;
+
+}
+
+.deco2{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:3;
+    pointer-events:none;
+
+}
+
+.deco3{
+    position:absolute;
+    top:-120px;
+    left:33%;
+}
+
+.tree{
+    position:absolute;
+}
+
+.footer{
+    position:relative;
+    width:100vw;
+    bottom:0;
+    left:0;
+}
+
+.footerImg{
+    position:relative;
+    width:100vw;
+    bottom:0;
+    left:0;
+}
